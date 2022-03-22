@@ -15,9 +15,8 @@ lista.appendChild(novoElemento);
 inputElementos.value = '';
 
 }
-// let listElements = document.querySelectorAll('li')
-// listElements.addEventListener('click', mudaCor)
-// function mudaCor(){
+lista.addEventListener('click', mudaCor)
+function mudaCor(){
 
-//     listElements.classList.add('listona')
-// }
+    event.target.classList.add('listona')
+}
