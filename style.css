@@ -4,3 +4,6 @@ background-color: gray
 .unselected{
 background-color: white;
 }
+.completed{
+    text-decoration: line-through;
+}
