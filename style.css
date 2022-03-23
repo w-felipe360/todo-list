@@ -1,3 +1,6 @@
-.listona{ 
+.selected{ 
 background-color: gray
+}
+.unselected{
+background-color: white;
 }

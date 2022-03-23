@@ -1,7 +1,8 @@
 let lista = document.getElementById('lista-tarefas')
 let botao = document.getElementById('criar-tarefa')
 let inputElementos = document.getElementById('texto-tarefa')
-
+let elementos = document.getElementsByTagName('li')
+let registrado = ''
 
 botao.addEventListener('click', adicionaElemento);
 
@@ -16,7 +17,18 @@ inputElementos.value = '';
 
 }
 lista.addEventListener('click', mudaCor)
-function mudaCor(){
+function mudaCor(event){
 
-    event.target.classList.add('listona')
+    for (index = 0; index < elementos.length; index += 1){
+if (elementos[index].className.includes('selected')){
+    elementos[index].classList.remove('selected');
+    
+
+}   
+
 }
+event.target.classList.add('selected'); 
+}   
+
+
+
